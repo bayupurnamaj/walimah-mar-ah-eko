@@ -1,0 +1,484 @@
+:root {
+  --satu: #534b82;
+  --dua: #428baeff;
+  --tiga: #302222;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Source Serif Pro", serif;
+  color: var(--satu);
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/*------------------------- Pembukaan ----------------------*/
+.pembukaan {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/bg1.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  transition: 0.5s linear;
+}
+.pembukaan.off {
+  transform: scaleX(0);
+  top: -150%;
+}
+.isi {
+  display: none;
+}
+
+.pembukaan .row {
+  padding: 1rem 10% 2rem 10%;
+  display: flex;
+  justify-content: center;
+}
+.pembukaan .row .card,
+.undang .row .card {
+  text-align: center;
+}
+.pembukaan .row .card img {
+  width: 70%;
+}
+.pembukaan .row .card h1,
+.comment .comment-section .form-control {
+  margin-bottom: 2rem;
+}
+.pembukaan .row .card .card-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.pembukaan .row .card a,
+.tgl .btn a,
+.rekening .btn button {
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: var(--satu);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s linear;
+}
+.pembukaan .row .card a:hover,
+.tgl .btn a:hover,
+.rekening .btn button:hover {
+  background-color: var(--dua);
+}
+.pembukaan .row .card .yth {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
+.pembukaan .row .card .kotak {
+  position: relative;
+  z-index: 2000;
+  margin: 1rem auto 4rem auto;
+  border: 1px solid var(--tiga);
+  width: fit-content;
+}
+.pembukaan .row .card .kotak::after {
+  content: "";
+  border: 1px solid var(--tiga);
+  width: 20.7rem;
+  position: absolute;
+  left: -0.5rem;
+  top: 5%;
+  justify-content: center;
+  background-color: rgba(48, 34, 34, 0);
+  height: 86%;
+}
+.pembukaan .row .card .kotak p {
+  font-size: 1.4rem;
+  padding: 2rem;
+  font-weight: 600;
+}
+/*----------------------- Navbar -----------------*/
+.navbar {
+  background-color: var(--satu);
+  padding: 0 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  text-align: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  z-index: 1000;
+}
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+.navbar .navbar-nav a {
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-right: 3rem;
+  color: white;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  padding: 1rem 0;
+  transition: 0.4s;
+}
+.navbar-nav a i {
+  margin-bottom: 0.5rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--tiga);
+}
+
+/*----------------------- Hero Section ----------------------*/
+.home {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/bg2.webp);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-size: cover;
+  background-position: top;
+  margin: auto;
+  position: relative;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.home .row {
+  position: absolute;
+  z-index: 99;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+}
+.home .row .card {
+  margin: auto;
+}
+.home .row .card p {
+  font-weight: 600;
+}
+.home .row .card .thn {
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.home .row .card p span {
+  border-left: 1px solid var(--tiga);
+  border-right: 1px solid var(--tiga);
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 0 2rem;
+  font-size: 1.6rem;
+}
+
+.row,
+.tgl .btn,
+.rekening .btn,
+.undang .undangan {
+  padding: 3rem 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.row .card,
+.judul h1,
+.undang .undangan .card,
+.comment .comment-section h1,
+.penutup .card p,
+.penutup .card h1 {
+  text-align: center;
+}
+.home .row .card img {
+  margin: 3rem;
+  width: 45%;
+}
+.home .row .card h1,
+.pembukaan .row .card h1,
+.judul h1,
+.comment .comment-section h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  font-weight: 100;
+}
+.home .row .card h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.card p,
+.story .timeline .container .content p,
+.comment .comment-section label {
+  font-size: 1.8rem;
+}
+.controls {
+  position: fixed;
+  bottom: 20%;
+  right: 32%;
+  z-index: 9999;
+}
+.controls .play {
+  display: none;
+}
+.controls .pause i,
+.controls .play i {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+  background-color: var(--satu);
+  color: white;
+  font-size: 1.3rem;
+  margin: auto;
+}
+.controls .play i:hover,
+.controls .pause i:hover {
+  background-color: var(--dua);
+}
+/* Undangan */
+.undang,
+.home,
+.tgl,
+.story,
+.comment,
+footer,
+.penutup,
+.rekening {
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+.undang::after,
+.tgl::after,
+.story::after,
+.penutup::after,
+.rekening::after {
+  content: "";
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  bottom: 4%;
+  top: 4%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+.undang {
+  min-height: 100vh;
+  background-image: url(img/bg1.webp);
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-size: cover;
+  background-position: center;
+  padding: 0 0 4rem 0;
+}
+.undang .row .card img {
+  width: 80%;
+}
+.undang .row .card .card-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  justify-content: center;
+}
+
+.card h1 {
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  font-size: 3rem;
+}
+.undang .undangan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.undang .undangan .tambah p {
+  font-size: 4rem;
+  font-family: "Great Vibes", cursive;
+  padding: 1rem;
+  font-weight: 100;
+}
+/* Tanggal Undangan */
+.judul h1 {
+  padding-top: 5rem;
+  margin-bottom: -3rem;
+}
+.tgl .row .card,
+.rekening .row .card {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 45rem;
+  margin: 4rem auto;
+}
+.tgl .row .card p,
+.rekening .row .card p {
+  margin-bottom: 2rem;
+}
+.tgl .btn {
+  margin-top: -10rem;
+}
+i {
+  margin-right: 1rem;
+}
+.rekening .judul p {
+  font-size: 1.8rem;
+  width: 80%;
+  margin: 5rem auto 0;
+  text-align: center;
+}
+.rekening .row .card img {
+  width: 60%;
+  padding: 5rem 0;
+}
+.rekening .btn button {
+  cursor: pointer;
+}
+.rekening .row .card input {
+  font-size: 2rem;
+  color: inherit;
+  text-align: center;
+  font-weight: 600;
+}
+/* Love Story */
+.story .timeline {
+  padding: 10rem 10%;
+  position: relative;
+}
+.story .timeline .container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+.story .timeline .container::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: -1rem;
+  background-color: var(--empat);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+  top: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+.story .timeline .left {
+  left: 0;
+}
+.story .timeline .right {
+  left: 50%;
+}
+.story .timeline .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.5rem;
+  width: 0;
+  z-index: 1;
+  right: 1.9rem;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--empat);
+}
+.story .timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.5rem;
+  width: 0;
+  z-index: 1;
+  left: 1.9rem;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--empat) transparent transparent;
+}
+.story .timeline .right::after {
+  left: -1rem;
+}
+.story .timeline .content {
+  color: #fff;
+  padding: 1.2rem 1.7rem;
+  background-color: var(--tiga);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 6px;
+}
+.story .timeline .container .content h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.penutup {
+  background-image: url(img/img6.jpg);
+  height: 200px;
+  background-position: bottom;
+  padding-top: 3rem;
+}
+.penutup .card {
+  width: 60%;
+  margin: auto;
+}
+.penutup .card p {
+  margin-bottom: 6rem;
+}
+.penutup .row .card img {
+  justify-content: center;
+  position: relative;
+  width: 40%;
+}
+footer {
+  background-color: var(--empat);
+  text-align: center;
+  height: 200px;
+}
+
+.footer-content {
+  padding: 3rem 1.2rem;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a:hover {
+  color: var(--tiga);
+}
+.footer-content i {
+  margin: 0 0.2rem 0 0.5rem;
+  color: red;
+}
+footer .footer-content span {
+  margin-right: 0.8rem;
+}

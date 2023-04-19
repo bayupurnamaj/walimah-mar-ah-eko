@@ -1,6 +1,7 @@
 .comment-section {
+  color: #fff;
   padding: 5rem 1.3rem 10rem 1.3rem;
-  background-color: var(--tiga);
+  background-color: var(--dua);
 }
 
 .comment .comment-section form .form-group {
@@ -21,9 +22,9 @@
 }
 
 .comment .comment-section .btn {
-  background-color: var(--empat);
+  background-color: var(--satu);
   color: white;
-  padding: 0.9rem 1.2rem;
+  padding: 1rem 1.5rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -34,7 +35,7 @@
 }
 
 .comment .comment-section .btn:hover {
-  background-color: var(--dua);
+  background-color: var(--tiga);
 }
 .comment .comment-section #comments-list {
   height: 50rem;
@@ -52,39 +53,39 @@
   align-items: center;
 }
 .comment .comment-section #comments-list .comment-isi {
-  border-bottom: 1px solid var(--empat);
+  border-bottom: 1px solid var(--satu);
   padding: 0 1rem 1rem;
   margin-bottom: 0.8rem;
   align-content: center;
 }
 .comment .comment-section #comments-list .comment-user .username {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-right: 1rem;
+  color: var(--satu);
 }
 .comment .comment-section #comments-list .comment-user .status {
   color: #fff;
-  font-weight: bold;
-  background-color: var(--empat);
+  font-size: 1rem;
+  background-color: var(--satu);
   padding: 0.5rem 0.6rem 0.5rem 0.5rem;
   border-radius: 0.3rem;
   text-align: center;
 }
 .comment .comment-section #comments-list .comment-isi .comment-date {
-  color: #666;
-  font-size: 1.1rem;
+  color: var(--tiga);
+  font-size: 1rem;
   font-style: italic;
 }
 .comment .comment-section #comments-list .comment-isi p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   display: block;
 }
 .comment .comment-section h2 {
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 2rem;
   font-size: 2rem;
   font-family: inherit;
   position: relative;
-  left: 10%;
 }
 @media (max-width: 768px) {
   .comment .comment-section form .form-group {

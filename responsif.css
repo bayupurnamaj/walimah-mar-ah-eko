@@ -2,7 +2,7 @@
 /* --------------------Laptop--------------- */
 @media (max-width: 1366px) {
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 }
 /* ----------------------Tablet------------------ */
@@ -10,10 +10,8 @@
 @media (max-width: 1024px) {
 }
 @media (max-width: 820px) {
-  html {
-    font-size: 85.5%;
-  }
-  .pembukaan {
+  .pembukaan,
+  .navbar {
     right: 0;
     left: 0;
   }
@@ -24,19 +22,25 @@
   .pembukaan .row .card .kotak {
     margin-bottom: 10rem;
   }
+
+  .undang,
+  .home,
+  .tgl,
+  .story,
+  .comment,
+  footer,
+  .penutup,
+  .rekening {
+    width: 100%;
+  }
+  .controls {
+    right: 30%;
+  }
 }
 /* -----------------------Mobilephone----------------------- */
 @media (max-width: 560px) {
-  html {
-    font-size: 70%;
-  }
-  .pembukaan {
-    right: 0;
-    left: 0;
-  }
   .pembukaan .row .card img {
     padding: 2rem 0 2rem 0;
-    width: 80%;
   }
   .pembukaan .row .card .kotak {
     margin-bottom: 5rem;

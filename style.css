@@ -126,15 +126,15 @@ section {
   text-align: center;
   overflow-x: scroll;
   white-space: nowrap;
-  z-index: 1000;
+  z-index: 99999;
 }
 .navbar::-webkit-scrollbar {
   display: none;
 }
 .navbar .navbar-nav a {
   font-weight: 300;
-  font-size: 1.3rem;
-  margin-right: 3rem;
+  font-size: 1.2rem;
+  margin-right: 2rem;
   color: white;
   display: inline-flex;
   flex-direction: column;
@@ -159,7 +159,7 @@ section {
   background-repeat: no-repeat;
   background-size: 10%;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   margin: auto;
   position: relative;
 }
@@ -297,10 +297,11 @@ footer,
   background-size: 10%;
   background-size: cover;
   background-position: center;
-  padding: 0 0 4rem 0;
+  padding: 3rem 0 4rem 0;
 }
 .undang .row .card img {
-  width: 80%;
+  width: 60%;
+  padding: 2rem;
 }
 .undang .row .card .card-text {
   display: flex;
@@ -326,7 +327,7 @@ footer,
   padding: 1rem;
   font-weight: 100;
 }
-/* Tanggal Undangan */
+/*--------------------------- Tanggal Undangan ------------------*/
 .judul h1 {
   padding-top: 5rem;
   margin-bottom: -3rem;
@@ -385,7 +386,7 @@ i {
   width: 2rem;
   height: 2rem;
   right: -1rem;
-  background-color: var(--empat);
+  background-color: var(--dua);
   box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
   top: 1rem;
   border-radius: 50%;
@@ -407,7 +408,7 @@ i {
   right: 1.9rem;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--empat);
+  border-color: transparent transparent transparent var(--dua);
 }
 .story .timeline .right::before {
   content: " ";
@@ -419,7 +420,7 @@ i {
   left: 1.9rem;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--empat) transparent transparent;
+  border-color: transparent var(--dua) transparent transparent;
 }
 .story .timeline .right::after {
   left: -1rem;
@@ -455,7 +456,7 @@ i {
   width: 40%;
 }
 footer {
-  background-color: var(--empat);
+  background-color: var(--dua);
   text-align: center;
   height: 200px;
 }

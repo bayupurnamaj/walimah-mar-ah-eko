@@ -24,7 +24,6 @@ section {
   background-image: url(img/img3.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-size: cover;
   background-position: center;
 }
 
@@ -270,7 +269,8 @@ section {
 .comment,
 footer,
 .penutup,
-.rekening {
+.rekening,
+.doa {
   width: 40%;
   margin: auto;
   position: relative;
@@ -278,7 +278,9 @@ footer,
 .undang::after,
 .tgl::after,
 .penutup::after,
-.rekening::after {
+.rekening::after,
+.doa::after,
+.map::after {
   content: "";
   position: absolute;
   left: 4%;
@@ -336,7 +338,8 @@ footer,
   background-image: url(img/bg3.webp);
 }
 .tgl .row .card,
-.rekening .row .card {
+.rekening .row .card,
+.doa .row .card {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
@@ -351,11 +354,21 @@ footer,
 i {
   margin-right: 1rem;
 }
+.rekening {
+  background-color: var(--dua);
+}
+
+.rekening .judul {
+  color: var(--tiga);
+}
 .rekening .judul p {
   font-size: 1.8rem;
   width: 80%;
   margin: 5rem auto 0;
   text-align: center;
+}
+.rekening .row {
+  color: var(--tiga);
 }
 .rekening .row .card img {
   width: 60%;
@@ -371,7 +384,8 @@ i {
   font-weight: 600;
 }
 /*----------------- Denah Lokasi -----------------*/
-.map {
+.map,
+.doa {
   background-image: url(img/bg3.webp);
 }
 .map .judul {
@@ -389,6 +403,10 @@ i {
 }
 .map .btn {
   margin-top: 3rem;
+}
+/* ---------------Do'a----------- */
+.doa .row .card {
+  margin-top: 12rem;
 }
 .penutup {
   background-image: url(img/img6.jpg);

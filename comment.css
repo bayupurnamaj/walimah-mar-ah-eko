@@ -1,14 +1,19 @@
+.comment {
+  background-image: url(img/bg3.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .comment-section {
   color: #fff;
   padding: 5rem 1.3rem 10rem 1.3rem;
-  background-color: var(--dua);
+  color: var(--satu);
 }
 
 .comment .comment-section form .form-group {
   margin: auto;
   width: 80%;
 }
-
 .comment .comment-section form .form-control {
   margin-top: 1rem;
   width: 100%;
@@ -40,8 +45,9 @@
 .comment .comment-section #comments-list {
   height: 50rem;
   overflow-y: scroll;
-  background-image: url(img/img3.jpg);
+  background-color: var(--dua);
   padding-top: 1rem;
+  background-position: bottom center;
   width: 80%;
   margin: auto;
   border-radius: 0.5rem;
@@ -57,12 +63,13 @@
   padding: 0 1rem 1rem;
   margin-bottom: 0.8rem;
   align-content: center;
+  color: #fff;
 }
 .comment .comment-section #comments-list .comment-user .username {
   font-weight: bold;
   font-size: 1.2rem;
   margin-right: 1rem;
-  color: var(--satu);
+  color: var(--tiga);
 }
 .comment .comment-section #comments-list .comment-user .status {
   color: #fff;
@@ -86,6 +93,7 @@
   font-size: 2rem;
   font-family: inherit;
   position: relative;
+  color: var(--satu);
 }
 @media (max-width: 768px) {
   .comment .comment-section form .form-group {

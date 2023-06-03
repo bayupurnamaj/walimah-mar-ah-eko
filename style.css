@@ -74,7 +74,7 @@ section {
   margin-bottom: 1rem;
 }
 .pembukaan .row .card a,
-.tgl .btn a,
+.map .btn a,
 .rekening .btn button {
   color: #fff;
   font-size: 1.3rem;
@@ -84,7 +84,7 @@ section {
   transition: 0.3s linear;
 }
 .pembukaan .row .card a:hover,
-.tgl .btn a:hover,
+.map .btn a:hover,
 .rekening .btn button:hover {
   background-color: var(--dua);
 }
@@ -198,7 +198,7 @@ section {
 }
 
 .row,
-.tgl .btn,
+.map .btn,
 .rekening .btn,
 .undang .undangan {
   padding: 3rem 7%;
@@ -233,7 +233,6 @@ section {
   font-size: 1.5rem;
 }
 .card p,
-.story .timeline .container .content p,
 .comment .comment-section label {
   font-size: 1.8rem;
 }
@@ -267,7 +266,7 @@ section {
 .undang,
 .home,
 .tgl,
-.story,
+.map,
 .comment,
 footer,
 .penutup,
@@ -278,7 +277,6 @@ footer,
 }
 .undang::after,
 .tgl::after,
-.story::after,
 .penutup::after,
 .rekening::after {
   content: "";
@@ -328,9 +326,14 @@ footer,
   font-weight: 100;
 }
 /*--------------------------- Tanggal Undangan ------------------*/
-.judul h1 {
+.judul {
   padding-top: 5rem;
   margin-bottom: -3rem;
+  position: relative;
+  z-index: 9;
+}
+.tgl {
+  background-image: url(img/bg3.webp);
 }
 .tgl .row .card,
 .rekening .row .card {
@@ -344,9 +347,6 @@ footer,
 .tgl .row .card p,
 .rekening .row .card p {
   margin-bottom: 2rem;
-}
-.tgl .btn {
-  margin-top: -10rem;
 }
 i {
   margin-right: 1rem;
@@ -370,72 +370,25 @@ i {
   text-align: center;
   font-weight: 600;
 }
-/* Love Story */
-.story .timeline {
-  padding: 10rem 10%;
-  position: relative;
+/*----------------- Denah Lokasi -----------------*/
+.map {
+  background-image: url(img/bg3.webp);
 }
-.story .timeline .container {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
+.map .judul {
+  margin: auto;
+  width: 80%;
 }
-.story .timeline .container::after {
-  content: "";
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  right: -1rem;
-  background-color: var(--dua);
-  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
-  top: 1rem;
-  border-radius: 50%;
-  z-index: 1;
+.map .judul p {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
-.story .timeline .left {
-  left: 0;
+.map-view {
+  text-align: center;
+  margin-top: 5rem;
 }
-.story .timeline .right {
-  left: 50%;
-}
-.story .timeline .left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 1.5rem;
-  width: 0;
-  z-index: 1;
-  right: 1.9rem;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent var(--dua);
-}
-.story .timeline .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 1.5rem;
-  width: 0;
-  z-index: 1;
-  left: 1.9rem;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent var(--dua) transparent transparent;
-}
-.story .timeline .right::after {
-  left: -1rem;
-}
-.story .timeline .content {
-  color: #fff;
-  padding: 1.2rem 1.7rem;
-  background-color: var(--tiga);
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
-  position: relative;
-  border-radius: 6px;
-}
-.story .timeline .container .content h2 {
-  font-size: 2.2rem;
-  font-weight: 600;
+.map .btn {
+  margin-top: 3rem;
 }
 .penutup {
   background-image: url(img/img6.jpg);

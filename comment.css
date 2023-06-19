@@ -12,7 +12,7 @@
 
 .comment .comment-section form .form-group {
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 .comment .comment-section form .form-control {
   margin-top: 1rem;
@@ -48,7 +48,7 @@
   background-color: var(--dua);
   padding-top: 1rem;
   background-position: bottom center;
-  width: 80%;
+  width: 100%;
   margin: auto;
   border-radius: 0.5rem;
 }
@@ -67,9 +67,8 @@
 }
 .comment .comment-section #comments-list .comment-user .username {
   font-weight: bold;
-  font-size: 1.2rem;
   margin-right: 1rem;
-  color: var(--tiga);
+  color: #fff;
 }
 .comment .comment-section #comments-list .comment-user .status {
   color: #fff;

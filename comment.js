@@ -1,4 +1,4 @@
-const scriptURL = "https://script.google.com/macros/s/AKfycbzICw_FH_EJd2McZsXZerfRRTMmhX5mur11U24150Uq2iVLTP21GitnjAcOrNah7kMCtQ/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbyvbNEGQ1xNrnKLNpP075JZPseTLRFa7jCnF6x4Q_OdHTqwC8sjt89SO1ERHr2nacb2/exec";
 const form = document.forms["comment-form"];
 const commentsList = document.getElementById("comments-list");
 

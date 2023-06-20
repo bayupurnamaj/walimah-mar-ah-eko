@@ -17,11 +17,12 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  border: 1px 1px 1px 1px solid black;
 }
 section {
   min-height: 100vh;
   align-items: center;
-  background-image: url(img/img3.jpg);
+  background-image: url(../img/img3.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -31,7 +32,7 @@ section {
 .pembukaan {
   min-height: 100vh;
   align-items: center;
-  background-image: url(img/bg1.webp);
+  background-image: url(../img/bg1.webp);
   background-repeat: no-repeat;
   background-size: 100%;
   background-size: cover;
@@ -98,20 +99,9 @@ section {
   border: 1px solid var(--tiga);
   width: fit-content;
 }
-.pembukaan .row .card .kotak::after {
-  content: "";
-  border: 1px solid var(--tiga);
-  width: 20.7rem;
-  position: absolute;
-  left: -0.5rem;
-  top: 5%;
-  justify-content: center;
-  background-color: rgba(48, 34, 34, 0);
-  height: 86%;
-}
 .pembukaan .row .card .kotak p {
   font-size: 1.4rem;
-  padding: 2rem;
+  padding: 1.3rem;
   font-weight: 600;
 }
 /*----------------------- Navbar -----------------*/
@@ -154,7 +144,7 @@ section {
 .home {
   min-height: 100vh;
   align-items: center;
-  background-image: url(img/bg2.webp);
+  background-image: url(../img/bg2.webp);
   background-repeat: no-repeat;
   background-size: 10%;
   background-size: cover;
@@ -292,7 +282,7 @@ footer,
 }
 .undang {
   min-height: 100vh;
-  background-image: url(img/bg1.webp);
+  background-image: url(../img/bg1.webp);
   background-repeat: no-repeat;
   background-size: 10%;
   background-size: cover;
@@ -335,7 +325,7 @@ footer,
   z-index: 9;
 }
 .tgl {
-  background-image: url(img/bg3.webp);
+  background-image: url(../img/bg3.webp);
 }
 .tgl .row .card,
 .rekening .row .card,
@@ -386,7 +376,8 @@ i {
 /*----------------- Denah Lokasi -----------------*/
 .map,
 .doa {
-  background-image: url(img/bg3.webp);
+  background-image: url(../img/bg3.webp);
+  background-size: cover;
 }
 .map .judul {
   margin: auto;
@@ -409,10 +400,16 @@ i {
   margin-top: 12rem;
 }
 .penutup {
-  background-image: url(img/img6.jpg);
+  background-image: url(../img/bg3.webp);
   height: 200px;
-  background-position: bottom;
+  background-position: cover;
   padding-top: 3rem;
+  background-size: cover;
+}
+.penutup .row,
+.penutup .card {
+  position: relative;
+  z-index: 8888;
 }
 .penutup .card {
   width: 60%;
@@ -424,7 +421,7 @@ i {
 .penutup .row .card img {
   justify-content: center;
   position: relative;
-  width: 40%;
+  width: 80%;
 }
 footer {
   background-color: var(--dua);

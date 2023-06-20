@@ -14,12 +14,13 @@
       rel="stylesheet"
     />
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="comment.css" />
-    <link rel="stylesheet" href="responsif.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../comment.css" />
+    <link rel="stylesheet" href="../responsif.css" />
+    <link rel="stylesheet" href="nama.css" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/img3.png" />
+    <link rel="icon" type="image/png" href="../img/favicon.png" />
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/004d60d0e7.js" crossorigin="anonymous"></script>
@@ -28,11 +29,11 @@
     <!---------------------------- Pembukaan ----------------------->
     <div class="pembukaan" id="pembukaan">
       <audio id="myAudio" controls hidden>
-        <source src="audio/aud2.mpeg" type="audio/mpeg" />
+        <source src="../audio/aud2.mpeg" type="audio/mpeg" />
       </audio>
       <div class="row">
         <div class="card">
-          <img src="img/img2.png" alt="Mar'ah & Jamal" class="Card-img" />
+          <img src="../img/img2.png" alt="Mar'ah & Jamal" class="Card-img" />
           <h2 class="card-title">UNDANGAN PERNIKAHAN</h2>
           <h1 class="card-name">Mar'ah & Jamal</h1>
           <p class="yth">
@@ -40,7 +41,7 @@
             <span>Bapak/Ibu/Saudara/i :</span>
           </p>
           <div class="kotak">
-            <p>Ustadz Syahri & Keluarga</p>
+            <p>Bpk. KH. Abdul Wahid S. MA</p>
           </div>
           <a href="#" onclick="enableAutoplay()" type="button" id="buka" class="buka"><i class="fa-solid fa-envelope-open"></i> Buka Undangan</a>
         </div>
@@ -54,10 +55,10 @@
           <a target="_self" href="#home"><i class="fa-solid fa-house"></i><span>Beranda</span></a>
           <a target="_self" href="#undang"><i class="fa-solid fa-heart"></i><span>Profil</span></a>
           <a target="_self" href="#tgl"><i class="fa-solid fa-calendar-check"></i><span>Acara</span></a>
-          <a target="_self" href="#"><i class="fa-solid fa-location-dot"></i><span>Lokasi</span></a>
-          <a target="_self" href="#"><i class="fa-solid fa-quote-right"></i><span>Do'a</span></a>
-          <a target="_self" href="#"><i class="fa-solid fa-gifts"></i><span>Gift</span></a>
-          <a target="_self" href="#"><i class="fa-solid fa-message"></i><span>Ucapan</span></a>
+          <a target="_self" href="#map"><i class="fa-solid fa-location-dot"></i><span>Lokasi</span></a>
+          <a target="_self" href="#doa"><i class="fa-solid fa-quote-right"></i><span>Do'a</span></a>
+          <a target="_self" href="#rekening"><i class="fa-solid fa-gifts"></i><span>Gift</span></a>
+          <a target="_self" href="#comment"><i class="fa-solid fa-message"></i><span>Ucapan</span></a>
         </div>
       </nav>
       <!------------------------ Akhir Navbar ----------------->
@@ -83,7 +84,7 @@
       <section class="undang" id="undang">
         <div class="row">
           <div class="card">
-            <img src="img/img3.png" alt="bismillah" class="Card-img" />
+            <img src="../img/img3.png" alt="bismillah" class="Card-img" />
             <p class="card-text">
               <strong>Assalamu'alaikum Warahmatullaahi Wabarakaatuh</strong>Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah
               semoga ridho-Mu tercurah mengiringi pernikahan kami.
@@ -99,7 +100,7 @@
             </div>
             <div class="card">
               <h1 class="card-2">Jamaludin</h1>
-              <p class="card-text">Putra ke dari bapak dan ibu</p>
+              <p class="card-text">Putra ke delapan dari bapak Lamri dan ibu Lamsah</p>
             </div>
           </div>
         </div>
@@ -113,14 +114,14 @@
         <div class="row">
           <div class="card">
             <h1 class="card-title">Akad Nikah</h1>
-            <p><strong>Kamis, 27 April 2023</strong><br />Pukul 08.00 WIB s/d Selesai</p>
+            <p><strong>Sabtu, 08 Juli 2023</strong><br />Pukul 08.00 WIB - pukul 09.30 WIB</p>
             <p class="card-text">
               Alamat : Rumah Mempelai wanita Jl.way tembulih Dusun Siring balak bawah Desa Sukabanjar kecamatan ngambur kabupaten pesisir barat
             </p>
           </div>
           <div class="card">
             <h1 class="card-title">Resepsi</h1>
-            <p><strong>Kamis, 27 April 2023</strong><br />Pukul 10.00 WIB s/d Selesai</p>
+            <p><strong>Sabtu, 08 Juli 2023</strong><br />Pukul 09.30 WIB - pukul 22.00 WIB</p>
             <p class="card-text">
               Alamat : Rumah Mempelai wanita Jl.way tembulih Dusun Siring balak bawah Desa Sukabanjar kecamatan ngambur kabupaten pesisir barat
             </p>
@@ -146,6 +147,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          <br />
           <div class="btn">
             <a href="https://goo.gl/maps/VW3FpaquZ9xXMAQM9?coh=178573&entry=tt" target="_blank" class="loc" id="loc"
               ><i class="fa-solid fa-location-dot"></i> Lihat Lokasi</a
@@ -175,15 +177,13 @@
       <section class="rekening" id="rekening">
         <div class="judul">
           <h1>Wedding Gift</h1>
-          <p class="card-text">
-            Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat mengirimkan hadiah via digital/transfer pada rekening dibawah ini :
-          </p>
+          <p>Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat mengirimkan hadiah via digital/transfer pada rekening dibawah ini :</p>
         </div>
         <div class="row">
           <div class="card">
-            <img src="img/rek.png" alt="" />
-            <input type="text" id="myInput" value="7152330515" />
-            <p class="card-text">Penti Triani Putri</p>
+            <img src="../img/bni.png" alt="" />
+            <input type="text" id="myInput" value="482701030612536" />
+            <p class="card-text">Jamaludin</p>
             <div class="btn">
               <button class="copy-btn" id="copy-btn"><i class="fa-solid fa-copy"></i> Salin no. Rekening</button>
             </div>
@@ -222,27 +222,27 @@
 
       <section class="penutup" id="penutup">
         <div class="row">
-          <div class="card"><img src="img/img2.png" alt="Penti & Anang" class="Card-img" /></div>
+          <div class="card"><img src="../img/img2.png" alt="Penti & Anang" class="Card-img" /></div>
         </div>
         <div class="card">
           <p class="card-text">
             Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa
             restunya, kami mengucapkan terima kasih.
           </p>
-          <h1 class="card-title">Wassalamu'alaikum Wr. Wb.</h1>
+          <h1>Wassalamu'alaikum Wr. Wb.</h1>
         </div>
       </section>
       <footer>
         <div class="footer-content">
           <p>
             <span>&copy; 2023 Invitatin4U</span
-            ><span>Made with<i class="fa-solid fa-heart"></i> by <a href="https://wa.me/+6282328776034"> Bayu Purnama Jatnika</a></span>
+            ><span>Made with<i class="fa-solid fa-heart"></i> by <a href="https://wa.me/+6285158502031"> Ubaidillah Albassam</a></span>
           </p>
         </div>
       </footer>
     </main>
     <!-- My Javascript -->
-    <script src="script.js"></script>
-    <script src="comment.js"></script>
+    <script src="../script.js"></script>
+    <script src="../comment.js"></script>
   </body>
 </html>

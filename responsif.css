@@ -16,25 +16,76 @@
     left: 0;
   }
   .pembukaan .row .card img {
-    padding: 10rem 0 5rem 0;
+    margin-top: -2rem;
     width: 80%;
   }
   .pembukaan .row .card .kotak {
     margin-bottom: 10rem;
   }
+  .pembukaan .row .card h1 {
+    margin-bottom: 1rem;
+    font-size: 3.3rem;
+  }
+  .pembukaan .row .card h2 {
+    margin-top: -2rem;
+  }
+  .pembukaan .row .card .yth {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
 
   .undang,
   .home,
   .tgl,
-  .story,
+  .map,
   .comment,
   footer,
   .penutup,
-  .rekening {
+  .rekening,
+  .doa {
     width: 100%;
   }
+  .doa .row .card {
+    margin-top: 4rem;
+  }
+  .rekening .row .card input {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
   .controls {
-    right: 30%;
+    bottom: 12%;
+    right: 5%;
+  }
+  .penutup .card p {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+  }
+  .penutup .card h1 {
+    font-size: 2rem;
+  }
+  .comment-section h1 {
+    font-size: 2rem;
+  }
+  .penutup .row .card img {
+    margin-top: -2.5rem;
+  }
+
+  .map .map-view iframe {
+    position: relative;
+    width: 80%;
+  }
+  .tgl .judul h1,
+  .map .row .judul h1,
+  .rekening .judul,
+  .comment .row .comment-section h1 {
+    font-size: 4rem;
+  }
+  .comment .comment-section form .form-group label {
+    font-size: 1.3rem;
+  }
+  .tgl .row .card p,
+  .rekening .judul p {
+    font-size: 1.6rem;
   }
 }
 /* -----------------------Mobilephone----------------------- */

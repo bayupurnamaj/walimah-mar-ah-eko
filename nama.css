@@ -9,3 +9,33 @@
   background-color: rgba(48, 34, 34, 0);
   height: 86%;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90px;
+}
+
+.footer-content {
+  padding: 3rem 1.2rem 1rem 1.2rem;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a:hover {
+  color: var(--tiga);
+}
+footer .footer-content span {
+  margin-right: 0.8rem;
+}
+
+.hero {
+  height: cover;
+}

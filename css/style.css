@@ -17,7 +17,6 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  border: 1px 1px 1px 1px solid black;
 }
 section {
   min-height: 100vh;
@@ -120,7 +119,7 @@ section {
 .navbar::-webkit-scrollbar {
   display: none;
 }
-.navbar .navbar-nav a {
+.navbar .nav a {
   font-weight: 300;
   font-size: 1.2rem;
   margin-right: 2rem;
@@ -133,10 +132,10 @@ section {
   padding: 1rem 0;
   transition: 0.4s;
 }
-.navbar-nav a i {
+.nav a i {
   margin-bottom: 0.5rem;
 }
-.navbar .navbar-nav a:hover {
+.navbar .nav a:hover {
   color: var(--tiga);
 }
 
@@ -164,7 +163,7 @@ section {
 .home .row {
   position: absolute;
   z-index: 99;
-  bottom: 10%;
+  bottom: 15%;
   left: 0;
   right: 0;
 }

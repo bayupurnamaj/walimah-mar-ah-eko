@@ -95,7 +95,6 @@ section {
   position: relative;
   z-index: 2000;
   margin: 1rem auto 4rem auto;
-  border: 1px solid var(--tiga);
   width: fit-content;
 }
 .pembukaan .row .card .kotak p {

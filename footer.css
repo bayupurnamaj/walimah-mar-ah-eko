@@ -1,0 +1,18 @@
+.footer-content {
+  padding: 3rem 1.2rem 1rem 1.2rem;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a:hover {
+  color: var(--tiga);
+}
+footer .footer-content span {
+  margin-right: 0.8rem;
+}

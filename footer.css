@@ -16,3 +16,10 @@
 footer .footer-content span {
   margin-right: 0.8rem;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90px;
+}

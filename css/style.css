@@ -402,7 +402,7 @@ i {
   background-image: url(../img/bg3.webp);
   height: 200px;
   background-position: cover;
-  padding-top: 3rem;
+  padding-top: 2rem 3rem;
   background-size: cover;
 }
 .penutup .row,
@@ -415,12 +415,16 @@ i {
   margin: auto;
 }
 .penutup .card p {
+  font-size: 1.6rem;
   margin-bottom: 6rem;
 }
 .penutup .row .card img {
   justify-content: center;
   position: relative;
   width: 80%;
+}
+.penutup .card h1 {
+  font-size: 2rem;
 }
 footer {
   background-color: var(--dua);
